@@ -12,9 +12,8 @@
         "baseUrl": ".",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "incremental": true,
         "skipLibCheck": true,
-        "declaration": true
+        "declaration": true,
     },
     "include": [
         "./lib",

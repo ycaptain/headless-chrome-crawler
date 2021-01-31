@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Puppeteer = void 0;
-// @ts-nocheck
+// // @ts-nocheck
 const events_1 = __importDefault(require("events"));
 const url_1 = require("url");
 const pick_1 = __importDefault(require("lodash/pick"));
@@ -61,43 +61,24 @@ const EMPTY_TXT = '';
 const deviceNames = Object.keys(DeviceDescriptors_1.default);
 class HCCrawler extends events_1.default {
     /**
-     * @param {!Object=} options
-     * @return {!Promise<!HCCrawler>}
-     */
-    static async connect(options) {
-        const browser = await puppeteer_extra_1.default.connect(pick_1.default(options, CONNECT_OPTIONS));
-        const crawler = new HCCrawler(browser, omit_1.default(options, CONNECT_OPTIONS));
-        await crawler.init();
-        return crawler;
-    }
-    /**
-     * @param {!Object=} options
-     * @return {!Promise<!HCCrawler>}
-     */
-    static async launch(options) {
-        const browser = await puppeteer_extra_1.default.launch(pick_1.default(options, LAUNCH_OPTIONS));
-        const crawler = new HCCrawler(browser, omit_1.default(options, LAUNCH_OPTIONS));
-        await crawler.init();
-        return crawler;
-    }
-    /**
-     * @return {!string}
-     */
-    static executablePath() {
-        return puppeteer_extra_1.default.executablePath();
-    }
-    /**
-     * @return {!Array<!string>}
-     */
-    static defaultArgs() {
-        return puppeteer_extra_1.default.defaultArgs();
-    }
-    /**
      * @param {!Puppeteer.Browser} browser
      * @param {!Object} options
      */
     constructor(browser, options) {
         super();
+        this.Events = {
+            RequestStarted: 'requeststarted',
+            RequestSkipped: 'requestskipped',
+            RequestDisallowed: 'requestdisallowed',
+            RequestFinished: 'requestfinished',
+            RequestRetried: 'requestretried',
+            RequestFailed: 'requestfailed',
+            RobotsTxtRequestFailed: 'robotstxtrequestfailed',
+            SitemapXmlRequestFailed: 'sitemapxmlrequestfailed',
+            MaxDepthReached: 'maxdepthreached',
+            MaxRequestReached: 'maxrequestreached',
+            Disconnected: 'disconnected',
+        };
         this._browser = browser;
         this._options = extend_1.default({
             maxDepth: 1,
@@ -134,6 +115,38 @@ class HCCrawler extends events_1.default {
         this._exportHeader();
         this._queue.on('pull', (_options, depth, previousUrl) => this._startRequest(_options, depth, previousUrl));
         this._browser.on('disconnected', () => void this.emit(HCCrawler.Events.Disconnected));
+    }
+    /**
+     * @param {!Object=} options
+     * @return {!Promise<!HCCrawler>}
+     */
+    static async connect(options) {
+        const browser = await puppeteer_extra_1.default.connect(pick_1.default(options, CONNECT_OPTIONS));
+        const crawler = new HCCrawler(browser, omit_1.default(options, CONNECT_OPTIONS));
+        await crawler.init();
+        return crawler;
+    }
+    /**
+     * @param {!Object=} options
+     * @return {!Promise<!HCCrawler>}
+     */
+    static async launch(options) {
+        const browser = await puppeteer_extra_1.default.launch(pick_1.default(options, LAUNCH_OPTIONS));
+        const crawler = new HCCrawler(browser, omit_1.default(options, LAUNCH_OPTIONS));
+        await crawler.init();
+        return crawler;
+    }
+    /**
+     * @return {!string}
+     */
+    static executablePath() {
+        return puppeteer_extra_1.default.executablePath();
+    }
+    /**
+     * @return {!Array<!string>}
+     */
+    static defaultArgs() {
+        return puppeteer_extra_1.default.defaultArgs();
     }
     /**
      * @return {!Promise}
@@ -630,19 +643,6 @@ class HCCrawler extends events_1.default {
         await this._cache.close();
     }
 }
-HCCrawler.Events = {
-    RequestStarted: 'requeststarted',
-    RequestSkipped: 'requestskipped',
-    RequestDisallowed: 'requestdisallowed',
-    RequestFinished: 'requestfinished',
-    RequestRetried: 'requestretried',
-    RequestFailed: 'requestfailed',
-    RobotsTxtRequestFailed: 'robotstxtrequestfailed',
-    SitemapXmlRequestFailed: 'sitemapxmlrequestfailed',
-    MaxDepthReached: 'maxdepthreached',
-    MaxRequestReached: 'maxrequestreached',
-    Disconnected: 'disconnected',
-};
 helper_1.tracePublicAPI(HCCrawler);
 // module.exports = HCCrawler;
 exports.default = HCCrawler;

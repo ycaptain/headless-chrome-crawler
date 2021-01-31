@@ -1,4 +1,4 @@
-// @ts-nocheck
+// // @ts-nocheck
 import EventEmitter from 'events';
 import { parse } from 'url';
 import pick from 'lodash/pick';
@@ -647,21 +647,23 @@ class HCCrawler extends EventEmitter {
   async _closeCache() {
     await this._cache.close();
   }
+
+  Events = {
+    RequestStarted: 'requeststarted',
+    RequestSkipped: 'requestskipped',
+    RequestDisallowed: 'requestdisallowed',
+    RequestFinished: 'requestfinished',
+    RequestRetried: 'requestretried',
+    RequestFailed: 'requestfailed',
+    RobotsTxtRequestFailed: 'robotstxtrequestfailed',
+    SitemapXmlRequestFailed: 'sitemapxmlrequestfailed',
+    MaxDepthReached: 'maxdepthreached',
+    MaxRequestReached: 'maxrequestreached',
+    Disconnected: 'disconnected',
+  };
 }
 
-HCCrawler.Events = {
-  RequestStarted: 'requeststarted',
-  RequestSkipped: 'requestskipped',
-  RequestDisallowed: 'requestdisallowed',
-  RequestFinished: 'requestfinished',
-  RequestRetried: 'requestretried',
-  RequestFailed: 'requestfailed',
-  RobotsTxtRequestFailed: 'robotstxtrequestfailed',
-  SitemapXmlRequestFailed: 'sitemapxmlrequestfailed',
-  MaxDepthReached: 'maxdepthreached',
-  MaxRequestReached: 'maxrequestreached',
-  Disconnected: 'disconnected',
-};
+
 
 tracePublicAPI(HCCrawler);
 

@@ -46,17 +46,17 @@ const LAUNCH_OPTIONS = [
     'env',
     'devtools',
 ];
-const CONSTRUCTOR_OPTIONS = CONNECT_OPTIONS.concat(LAUNCH_OPTIONS).concat([
-    'maxConcurrency',
-    'maxRequest',
-    'cache',
-    'exporter',
-    'persistCache',
-    'preRequest',
-    'onSuccess',
-    'onError',
-    'customizeCrawl',
-]);
+const CONSTRUCTOR_OPTIONS = [...CONNECT_OPTIONS, ...LAUNCH_OPTIONS, ...[
+        'maxConcurrency',
+        'maxRequest',
+        'cache',
+        'exporter',
+        'persistCache',
+        'preRequest',
+        'onSuccess',
+        'onError',
+        'customizeCrawl',
+    ]];
 const EMPTY_TXT = '';
 const deviceNames = Object.keys(DeviceDescriptors_1.default);
 const defaultOptions = {
@@ -320,7 +320,7 @@ class HCCrawler extends events_1.default {
         this.emit(HCCrawler.Events.RequestStarted, options);
         const crawler = await this._newCrawler(options, depth, previousUrl);
         try {
-            const res = await this._crawl(crawler);
+            const res = await this._crawl(crawler, options);
             await crawler.close();
             this.emit(HCCrawler.Events.RequestFinished, options);
             const requested = await this._checkRequestedRedirect(options, res.response);
@@ -548,11 +548,11 @@ class HCCrawler extends events_1.default {
      * @param {!Crawler} crawler
      * @return {!Promise<!Object>}
      */
-    async _crawl(crawler) {
+    async _crawl(crawler, options) {
         if (!this._customCrawl)
             return crawler.crawl();
         const crawl = () => crawler.crawl.call(crawler);
-        return this._customCrawl(crawler.page(), crawl);
+        return this._customCrawl(crawler.page(), crawl, options);
     }
     /**
      * @param {!Array<!string>} urls
@@ -644,6 +644,5 @@ HCCrawler.Events = {
     MaxRequestReached: 'maxrequestreached',
     Disconnected: 'disconnected',
 };
-helper_1.tracePublicAPI(HCCrawler);
 exports.default = HCCrawler;
 //# sourceMappingURL=hccrawler.js.map

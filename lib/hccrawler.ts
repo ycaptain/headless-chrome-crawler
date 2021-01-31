@@ -35,7 +35,7 @@ const CONNECT_OPTIONS = [
   'browserWSEndpoint',
   'ignoreHTTPSErrors',
   'slowMo',
-];
+] as const;
 const LAUNCH_OPTIONS = [
   'ignoreHTTPSErrors',
   'headless',
@@ -50,8 +50,8 @@ const LAUNCH_OPTIONS = [
   'userDataDir',
   'env',
   'devtools',
-];
-const CONSTRUCTOR_OPTIONS = CONNECT_OPTIONS.concat(LAUNCH_OPTIONS).concat([
+] as const;
+const CONSTRUCTOR_OPTIONS = [...CONNECT_OPTIONS, ...LAUNCH_OPTIONS,  ...[
   'maxConcurrency',
   'maxRequest',
   'cache',
@@ -61,7 +61,9 @@ const CONSTRUCTOR_OPTIONS = CONNECT_OPTIONS.concat(LAUNCH_OPTIONS).concat([
   'onSuccess',
   'onError',
   'customizeCrawl',
-]);
+]] as const;
+
+
 const EMPTY_TXT = '';
 
 const deviceNames = Object.keys(devices);
@@ -158,7 +160,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
     this._onError = options.onError || null;
     this._customCrawl = options.customCrawl || null;
     this._exportHeader();
-    this._queue.on('pull', (_options: any, depth: number, previousUrl: string | null) => this._startRequest(_options, depth, previousUrl));
+    this._queue.on('pull', (_options: MergedOptions<EvalResult>, depth: number, previousUrl: string | null) => this._startRequest(_options, depth, previousUrl));
     this._browser.on('disconnected', () => this.emit(HCCrawler.Events.Disconnected));
   }
 
@@ -296,7 +298,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @param {string} previousUrl
    * @return {!Promise}
    */
-  async _push(options: any, depth: number, previousUrl: string | null) {
+  async _push(options: MergedOptions<EvalResult>, depth: number, previousUrl: string | null) {
     let { priority } = options;
     if (!priority && options.depthPriority) priority = depth;
     await this._queue.push(options, depth, previousUrl, priority);
@@ -309,7 +311,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise}
    * @private
    */
-  async _startRequest(options: any, depth: number, previousUrl: string | null) {
+  async _startRequest(options: MergedOptions<EvalResult>, depth: number, previousUrl: string | null) {
     const skip = await this._skipRequest(options);
     if (skip) {
       this.emit(HCCrawler.Events.RequestSkipped, options);
@@ -334,7 +336,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise<!boolean>}
    * @private
    */
-  async _skipRequest(options: any) {
+  async _skipRequest(options: MergedOptions<EvalResult>) {
     const allowedDomain = this._checkAllowedDomains(options);
     if (!allowedDomain) return true;
     const requested = await this._checkRequested(options);
@@ -352,11 +354,11 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise<!Array<!string>>}
    * @private
    */
-  async _request(options: any, depth: number, previousUrl: string | null, retryCount = 0): Promise<any> {
+  async _request(options: MergedOptions<EvalResult>, depth: number, previousUrl: string | null, retryCount = 0): Promise<any> {
     this.emit(HCCrawler.Events.RequestStarted, options);
     const crawler = await this._newCrawler(options, depth, previousUrl);
     try {
-      const res = await this._crawl(crawler) as any;
+      const res = await this._crawl(crawler, options) as any;
       await crawler.close();
       this.emit(HCCrawler.Events.RequestFinished, options);
       const requested = await this._checkRequestedRedirect(options, res.response);
@@ -387,7 +389,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise<!boolean>}
    * @private
    */
-  async _checkAllowedRobots(options: any, depth: number, previousUrl: string | null) {
+  async _checkAllowedRobots(options: MergedOptions<EvalResult>, depth: number, previousUrl: string | null) {
     if (!options.obeyRobotsTxt) return true;
     const robot = await this._getRobot(options, depth, previousUrl);
     const userAgent = await this._getUserAgent(options);
@@ -401,7 +403,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise}
    * @private
    */
-  async _followSitemap(options: any, depth: number, previousUrl: string | null) {
+  async _followSitemap(options: MergedOptions<EvalResult>, depth: number, previousUrl: string | null) {
     if (!options.followSitemapXml) return;
     const robot = await this._getRobot(options, depth, previousUrl);
     const sitemapUrls = robot.getSitemaps();
@@ -513,7 +515,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise}
    * @private
    */
-  async _markRequested(options: any) {
+  async _markRequested(options: MergedOptions<EvalResult>) {
     if (!options.skipDuplicates) return;
     const key = generateKey(options);
     await this._cache.set(key, '1');
@@ -580,10 +582,10 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @param {!Crawler} crawler
    * @return {!Promise<!Object>}
    */
-  async _crawl(crawler: Crawler) {
+  async _crawl(crawler: Crawler, options: any) {
     if (!this._customCrawl) return crawler.crawl();
     const crawl = () => crawler.crawl.call(crawler);
-    return this._customCrawl(crawler.page(), crawl);
+    return this._customCrawl(crawler.page(), crawl, options);
   }
 
   /**
@@ -593,7 +595,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
    * @return {!Promise}
    * @private
    */
-  async _followLinks(urls: string[], options: any, depth: number) {
+  async _followLinks(urls: string[], options: MergedOptions<EvalResult>, depth: number) {
     if (depth >= options.maxDepth) {
       this.emit(HCCrawler.Events.MaxDepthReached);
       return;
@@ -679,7 +681,7 @@ class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter 
   };
 }
 
-tracePublicAPI(HCCrawler);
+// tracePublicAPI(HCCrawler);
 
 export type ConstructorOptions<EvalResult = any, CustomCrawlResult = any> = {
   maxConcurrency?: number;
@@ -693,6 +695,7 @@ export type ConstructorOptions<EvalResult = any, CustomCrawlResult = any> = {
   customCrawl?: (
     page: Page,
     crawl: () => Promise<CrawlResult<EvalResult>>,
+    options: any,
   ) => Promise<CustomCrawlResult>;
   onSuccess?: (
     result: CustomCrawlResult extends null ? EvalResult : CustomCrawlResult,
@@ -741,6 +744,8 @@ export type CrawlResult<EvalResult = null> = {
   };
 
 }
+
+type MergedOptions<EvalResult=any> = Omit<DefaultOptions & QueueOptions<EvalResult>, typeof CONSTRUCTOR_OPTIONS[number]>;
 
 type JSONValue = {
   [K in string]: string | number | boolean;

@@ -802,6 +802,7 @@
       "experimentalDecorators": true,
       "incremental": true,
       "skipLibCheck": true,
+      "declaration": true,
       "watch": true,
       "configFilePath": "../tsconfig.json"
     },
@@ -1780,8 +1781,14 @@
         "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/index.d.ts",
         "../lib/crawler.js"
       ],
+      "../lib/puppeteer.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
       "../lib/types/puppeteer.d.ts": [
-        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../lib/types/types.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
@@ -1824,8 +1831,16 @@
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../lib/types/types.d.ts"
       ],
+      "../../../node_modules/.pnpm/@types/bluebird@3.5.33/node_modules/@types/bluebird/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
       "../../../node_modules/.pnpm/@types/body-parser@1.19.0/node_modules/@types/body-parser/index.d.ts": [
         "../../../node_modules/.pnpm/@types/connect@3.4.34/node_modules/@types/connect/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/caseless@0.12.2/node_modules/@types/caseless/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../lib/types/types.d.ts"
       ],
@@ -1834,6 +1849,14 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/cookiejar@2.1.2/node_modules/@types/cookiejar/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/debug@0.0.30/node_modules/@types/debug/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/debug@4.1.5/node_modules/@types/debug/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../lib/types/types.d.ts"
       ],
@@ -1921,7 +1944,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/collection.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -1935,7 +1960,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/common.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -1949,7 +1976,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/date.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -1963,7 +1992,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/function.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -1977,7 +2008,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/lang.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -1991,7 +2024,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/math.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2005,7 +2040,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/number.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2019,7 +2056,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/object.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2033,7 +2072,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2047,7 +2088,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/object.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2061,7 +2104,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/object.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2075,19 +2120,29 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/object.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/each.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/extend.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/get.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/includes.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts",
@@ -2101,10 +2156,14 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/object.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/seq.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/string.d.ts",
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/util.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/isarray.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/isempty.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
@@ -2127,19 +2186,29 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/isstring.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/map.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/noop.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/omit.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/pick.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/reduce.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
@@ -2200,7 +2269,8 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/qs@6.9.5/node_modules/@types/qs/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
@@ -2212,19 +2282,22 @@
       ],
       "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/errors.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
-        "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/index.d.ts"
+        "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/index.d.ts": [
         "../../../node_modules/.pnpm/@types/bluebird@3.5.33/node_modules/@types/bluebird/index.d.ts",
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/errors.d.ts",
-        "../../../node_modules/.pnpm/@types/request@2.48.5/node_modules/@types/request/index.d.ts"
+        "../../../node_modules/.pnpm/@types/request@2.48.5/node_modules/@types/request/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/request@2.48.5/node_modules/@types/request/index.d.ts": [
         "../../../node_modules/.pnpm/@types/caseless@0.12.2/node_modules/@types/caseless/index.d.ts",
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/tough-cookie@4.0.0/node_modules/@types/tough-cookie/index.d.ts",
-        "../../../node_modules/.pnpm/form-data@2.5.1/node_modules/form-data/index.d.ts"
+        "../../../node_modules/.pnpm/form-data@2.5.1/node_modules/form-data/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/serve-static@1.13.8/node_modules/@types/serve-static/index.d.ts": [
         "../../../node_modules/.pnpm/@types/mime@2.0.3/node_modules/@types/mime/index.d.ts",
@@ -2250,6 +2323,10 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/tapable@1.0.6/node_modules/@types/tapable/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/tough-cookie@4.0.0/node_modules/@types/tough-cookie/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../lib/types/types.d.ts"
       ],
@@ -2376,7 +2453,8 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/form-data@2.5.1/node_modules/form-data/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/cleanupsemantic.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
@@ -2416,23 +2494,127 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/puppeteer-extra-plugin-stealth@2.6.7_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin-stealth/index.d.ts": [
-        "../../../node_modules/.pnpm/puppeteer-extra-plugin@3.1.8_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin/dist/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/puppeteer-extra-plugin@3.1.8_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin/dist/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/puppeteer-extra-plugin@3.1.8_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin/dist/index.d.ts": [
         "../../../node_modules/.pnpm/@types/debug@4.1.5/node_modules/@types/debug/index.d.ts",
-        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/index.d.ts": [
-        "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/puppeteer.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/puppeteer.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/puppeteer.d.ts": [
-        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/source-map@0.6.1/node_modules/source-map/source-map.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.dom.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.full.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.es5.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.scripthost.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/typescript@4.1.3/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../lib/types/types.d.ts"
       ],

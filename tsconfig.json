@@ -1,12 +1,24 @@
 {
-  "compilerOptions": {
-    "noEmit": true,
-    "allowJs": true,
-    "checkJs": true,
-    "target": "es2017",
-    "module": "commonjs"
-  },
-  "include": [
-    "lib"
-  ]
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es2017",
+        "noImplicitAny": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "incremental": true,
+        "skipLibCheck": true,
+    },
+    "include": [
+        "./lib",
+        "./cache",
+        "./exporter",
+        "./index.ts"
+    ]
 }

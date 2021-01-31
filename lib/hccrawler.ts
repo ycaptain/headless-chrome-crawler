@@ -1,29 +1,34 @@
-const EventEmitter = require('events');
-const { parse } = require('url');
-const pick = require('lodash/pick');
-const omit = require('lodash/omit');
-const extend = require('lodash/extend');
-const map = require('lodash/map');
-const each = require('lodash/each');
-const includes = require('lodash/includes');
-const isString = require('lodash/isString');
-const isArray = require('lodash/isArray');
-const rp = require('request-promise');
-// @ts-ignore
-const robotsParser = require('robots-parser');
-const Puppeteer = require('puppeteer');
-const devices = require('puppeteer/DeviceDescriptors');
-const {
+// @ts-nocheck
+import EventEmitter from 'events';
+import { parse } from 'url';
+import pick from 'lodash/pick';
+import omit from 'lodash/omit';
+import extend from 'lodash/extend';
+import map from 'lodash/map';
+import each from 'lodash/each';
+import includes from 'lodash/includes';
+import isString from 'lodash/isString';
+import isArray from 'lodash/isArray';
+import rp from 'request-promise';
+import robotsParser from 'robots-parser';
+import Puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+import devices from 'puppeteer/DeviceDescriptors';
+
+import {
   delay,
   generateKey,
   checkDomainMatch,
   getRobotsUrl,
   getSitemapUrls,
   tracePublicAPI,
-} = require('./helper');
-const PriorityQueue = require('./priority-queue');
-const Crawler = require('./crawler');
-const SessionCache = require('../cache/session');
+} from './helper';
+import PriorityQueue from './priority-queue';
+import Crawler from './crawler';
+import SessionCache from '../cache/session';
+
+Puppeteer.use(StealthPlugin());
+export { Puppeteer };
 
 const CONNECT_OPTIONS = [
   'browserWSEndpoint',
@@ -660,4 +665,5 @@ HCCrawler.Events = {
 
 tracePublicAPI(HCCrawler);
 
-module.exports = HCCrawler;
+// module.exports = HCCrawler;
+export default HCCrawler;

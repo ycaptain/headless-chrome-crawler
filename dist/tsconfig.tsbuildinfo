@@ -387,8 +387,8 @@
         "affectsGlobalScope": true
       },
       "../lib/hccrawler.ts": {
-        "version": "1a815e05178f40e466d1e5b7fac7cc54be54c763a18b4bc42d3ed8783b0a1fdb",
-        "signature": "49b787b0ce66f9beab208e2e8ed6fc73891d169a316c8135950e61e9c5a8bee7",
+        "version": "e86e867beabcdf34986455474c34605958bbc4b514e895c30ad19ff51b7db174",
+        "signature": "2fa90640e7a5e039b50f5d4b6febc24b5047ee22936c83b1c0e48c0ad01874e8",
         "affectsGlobalScope": false
       },
       "../lib/puppeteer.d.ts": {
@@ -1787,68 +1787,127 @@
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
       ],
       "../../../node_modules/.pnpm/@babel/parser@7.12.11/node_modules/@babel/parser/typings/babel-parser.d.ts": [
-        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts"
+        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/anymatch@1.3.1/node_modules/@types/anymatch/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/babel__core@7.1.12/node_modules/@types/babel__core/index.d.ts": [
         "../../../node_modules/.pnpm/@babel/parser@7.12.11/node_modules/@babel/parser/typings/babel-parser.d.ts",
         "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts",
         "../../../node_modules/.pnpm/@types/babel__generator@7.6.2/node_modules/@types/babel__generator/index.d.ts",
         "../../../node_modules/.pnpm/@types/babel__template@7.4.0/node_modules/@types/babel__template/index.d.ts",
-        "../../../node_modules/.pnpm/@types/babel__traverse@7.11.0/node_modules/@types/babel__traverse/index.d.ts"
+        "../../../node_modules/.pnpm/@types/babel__traverse@7.11.0/node_modules/@types/babel__traverse/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/babel__generator@7.6.2/node_modules/@types/babel__generator/index.d.ts": [
-        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts"
+        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/babel__template@7.4.0/node_modules/@types/babel__template/index.d.ts": [
         "../../../node_modules/.pnpm/@babel/parser@7.12.11/node_modules/@babel/parser/typings/babel-parser.d.ts",
-        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts"
+        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/babel__traverse@7.11.0/node_modules/@types/babel__traverse/index.d.ts": [
-        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts"
+        "../../../node_modules/.pnpm/@babel/types@7.12.12/node_modules/@babel/types/lib/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/body-parser@1.19.0/node_modules/@types/body-parser/index.d.ts": [
         "../../../node_modules/.pnpm/@types/connect@3.4.34/node_modules/@types/connect/index.d.ts",
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/connect@3.4.34/node_modules/@types/connect/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/cookiejar@2.1.2/node_modules/@types/cookiejar/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/eslint-scope@3.7.0/node_modules/@types/eslint-scope/index.d.ts": [
         "../../../node_modules/.pnpm/@types/eslint@7.2.6/node_modules/@types/eslint/index.d.ts",
-        "../../../node_modules/.pnpm/@types/estree@0.0.45/node_modules/@types/estree/index.d.ts"
+        "../../../node_modules/.pnpm/@types/estree@0.0.45/node_modules/@types/estree/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/eslint@7.2.6/node_modules/@types/eslint/helpers.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/eslint@7.2.6/node_modules/@types/eslint/index.d.ts": [
         "../../../node_modules/.pnpm/@types/eslint@7.2.6/node_modules/@types/eslint/helpers.d.ts",
         "../../../node_modules/.pnpm/@types/estree@0.0.45/node_modules/@types/estree/index.d.ts",
-        "../../../node_modules/.pnpm/@types/json-schema@7.0.6/node_modules/@types/json-schema/index.d.ts"
+        "../../../node_modules/.pnpm/@types/json-schema@7.0.6/node_modules/@types/json-schema/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/estree@0.0.45/node_modules/@types/estree/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/express-serve-static-core@4.17.18/node_modules/@types/express-serve-static-core/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/qs@6.9.5/node_modules/@types/qs/index.d.ts",
-        "../../../node_modules/.pnpm/@types/range-parser@1.2.3/node_modules/@types/range-parser/index.d.ts"
+        "../../../node_modules/.pnpm/@types/range-parser@1.2.3/node_modules/@types/range-parser/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/express@4.17.11/node_modules/@types/express/index.d.ts": [
         "../../../node_modules/.pnpm/@types/body-parser@1.19.0/node_modules/@types/body-parser/index.d.ts",
         "../../../node_modules/.pnpm/@types/express-serve-static-core@4.17.18/node_modules/@types/express-serve-static-core/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/qs@6.9.5/node_modules/@types/qs/index.d.ts",
-        "../../../node_modules/.pnpm/@types/serve-static@1.13.8/node_modules/@types/serve-static/index.d.ts"
+        "../../../node_modules/.pnpm/@types/serve-static@1.13.8/node_modules/@types/serve-static/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/glob@7.1.3/node_modules/@types/glob/index.d.ts": [
         "../../../node_modules/.pnpm/@types/minimatch@3.0.3/node_modules/@types/minimatch/index.d.ts",
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/graceful-fs@4.1.4/node_modules/@types/graceful-fs/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/istanbul-lib-coverage@2.0.3/node_modules/@types/istanbul-lib-coverage/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/istanbul-lib-report@3.0.0/node_modules/@types/istanbul-lib-report/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/istanbul-lib-coverage@2.0.3/node_modules/@types/istanbul-lib-coverage/index.d.ts"
+        "../../../node_modules/.pnpm/@types/istanbul-lib-coverage@2.0.3/node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/istanbul-reports@3.0.0/node_modules/@types/istanbul-reports/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/istanbul-lib-report@3.0.0/node_modules/@types/istanbul-lib-report/index.d.ts"
+        "../../../node_modules/.pnpm/@types/istanbul-lib-report@3.0.0/node_modules/@types/istanbul-lib-report/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/jest@26.0.20/node_modules/@types/jest/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/index.d.ts",
-        "../../../node_modules/.pnpm/pretty-format@26.6.2/node_modules/pretty-format/build/index.d.ts"
+        "../../../node_modules/.pnpm/pretty-format@26.6.2/node_modules/pretty-format/build/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/json-schema@7.0.6/node_modules/@types/json-schema/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/json5@0.0.29/node_modules/@types/json5/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/array.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/common/collection.d.ts",
@@ -2048,7 +2107,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/isempty.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/isfunction.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
@@ -2081,7 +2142,9 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/reduce.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/some.d.ts": [
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
@@ -2099,17 +2162,53 @@
         "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/uniq.d.ts": [
-        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts"
+        "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/index.d.ts",
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/mime@2.0.3/node_modules/@types/mime/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/minimatch@3.0.3/node_modules/@types/minimatch/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/minimist@1.2.1/node_modules/@types/minimist/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/inspector.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/inspector.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/inspector.d.ts": [
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/normalize-package-data@2.4.0/node_modules/@types/normalize-package-data/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/parse-json@4.0.0/node_modules/@types/parse-json/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/prettier@2.1.6/node_modules/@types/prettier/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/qs@6.9.5/node_modules/@types/qs/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/range-parser@1.2.3/node_modules/@types/range-parser/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/errors.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
@@ -2129,17 +2228,35 @@
       ],
       "../../../node_modules/.pnpm/@types/serve-static@1.13.8/node_modules/@types/serve-static/index.d.ts": [
         "../../../node_modules/.pnpm/@types/mime@2.0.3/node_modules/@types/mime/index.d.ts",
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/source-list-map@0.1.2/node_modules/@types/source-list-map/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/stack-utils@2.0.0/node_modules/@types/stack-utils/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/superagent@4.1.10/node_modules/@types/superagent/index.d.ts": [
         "../../../node_modules/.pnpm/@types/cookiejar@2.1.2/node_modules/@types/cookiejar/index.d.ts",
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/supertest@2.0.10/node_modules/@types/supertest/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/superagent@4.1.10/node_modules/@types/superagent/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/superagent@4.1.10/node_modules/@types/superagent/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/tapable@1.0.6/node_modules/@types/tapable/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/uglify-js@3.11.1/node_modules/@types/uglify-js/index.d.ts": [
-        "../../../node_modules/.pnpm/source-map@0.6.1/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/source-map@0.6.1/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
@@ -2153,24 +2270,32 @@
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/replacesource.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
-        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts"
+        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/cachedsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/compatsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
-        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts"
+        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/concatsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/source-list-map@0.1.2/node_modules/@types/source-list-map/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/cachedsource.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/compatsource.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/concatsource.d.ts",
@@ -2181,38 +2306,52 @@
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/originalsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/source-list-map@0.1.2/node_modules/@types/source-list-map/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/prefixsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
-        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts"
+        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/rawsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
-        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts"
+        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/replacesource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
-        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts"
+        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts": [
-        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/lib/source.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/webpack@4.41.25/node_modules/@types/webpack/index.d.ts": [
         "../../../node_modules/.pnpm/@types/anymatch@1.3.1/node_modules/@types/anymatch/index.d.ts",
@@ -2220,33 +2359,61 @@
         "../../../node_modules/.pnpm/@types/tapable@1.0.6/node_modules/@types/tapable/index.d.ts",
         "../../../node_modules/.pnpm/@types/uglify-js@3.11.1/node_modules/@types/uglify-js/index.d.ts",
         "../../../node_modules/.pnpm/@types/webpack-sources@2.1.0/node_modules/@types/webpack-sources/index.d.ts",
-        "../../../node_modules/.pnpm/source-map@0.6.1/node_modules/source-map/source-map.d.ts"
+        "../../../node_modules/.pnpm/source-map@0.6.1/node_modules/source-map/source-map.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/@types/yargs-parser@20.2.0/node_modules/@types/yargs-parser/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/yargs@15.0.12/node_modules/@types/yargs/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/yargs-parser@20.2.0/node_modules/@types/yargs-parser/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/yargs-parser@20.2.0/node_modules/@types/yargs-parser/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/@types/yauzl@2.9.1/node_modules/@types/yauzl/index.d.ts": [
-        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/form-data@2.5.1/node_modules/form-data/index.d.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts"
       ],
+      "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/cleanupsemantic.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
       "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/difflines.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/cleanupsemantic.d.ts",
-        "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts"
+        "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/difflines.d.ts",
         "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/printdiffs.d.ts",
-        "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts"
+        "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/printdiffs.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/cleanupsemantic.d.ts",
-        "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts"
+        "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/jest-diff@26.6.2/node_modules/jest-diff/build/types.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/pretty-format@26.6.2/node_modules/pretty-format/build/index.d.ts": [
-        "../../../node_modules/.pnpm/pretty-format@26.6.2/node_modules/pretty-format/build/types.d.ts"
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/pretty-format@26.6.2/node_modules/pretty-format/build/types.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/pretty-format@26.6.2/node_modules/pretty-format/build/types.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ],
       "../../../node_modules/.pnpm/puppeteer-extra-plugin-stealth@2.6.7_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin-stealth/index.d.ts": [
         "../../../node_modules/.pnpm/puppeteer-extra-plugin@3.1.8_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin/dist/index.d.ts"
@@ -2261,12 +2428,42 @@
       "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/puppeteer.d.ts": [
         "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts"
       ],
+      "../../../node_modules/.pnpm/source-map@0.6.1/node_modules/source-map/source-map.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/.pnpm/source-map@0.7.3/node_modules/source-map/source-map.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
       "../../../node_modules/@types/jquery/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
         "../../../node_modules/@types/jquery/jquery.d.ts",
         "../../../node_modules/@types/jquery/jquerystatic.d.ts",
         "../../../node_modules/@types/jquery/legacy.d.ts",
         "../../../node_modules/@types/jquery/misc.d.ts",
-        "../../../node_modules/@types/sizzle/index.d.ts"
+        "../../../node_modules/@types/sizzle/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/@types/jquery/jquery.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/@types/jquery/jquerystatic.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/@types/jquery/legacy.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/@types/jquery/misc.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
+      ],
+      "../../../node_modules/@types/sizzle/index.d.ts": [
+        "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../lib/types/types.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2279,1151 +2476,7 @@
       "../index.ts",
       "../lib/async-events.js",
       "../lib/crawler.js",
-      [
-        "../lib/hccrawler.ts",
-        [
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 1753,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 2069,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 2612,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 2645,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 2674,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3178,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3233,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3289,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3332,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3357,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3404,
-            "length": 15,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_requestedCount' does not exist on type 'HCCrawler'. Did you mean 'requestedCount'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 6517,
-                "length": 14,
-                "messageText": "'requestedCount' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3434,
-            "length": 11,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_preRequest' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3485,
-            "length": 10,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_onSuccess' does not exist on type 'HCCrawler'. Did you mean '_success'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 14314,
-                "length": 8,
-                "messageText": "'_success' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3534,
-            "length": 8,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_onError' does not exist on type 'HCCrawler'. Did you mean '_error'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 14492,
-                "length": 6,
-                "messageText": "'_error' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3579,
-            "length": 12,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_customCrawl' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3658,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3677,
-            "length": 8,
-            "messageText": "Parameter '_options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3687,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3694,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3770,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3920,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3944,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 4068,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 4448,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5130,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5159,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5346,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5375,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5574,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5676,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5771,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5869,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5952,
-            "length": 10,
-            "messageText": "Parameter 'maxRequest' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 5975,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6035,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6078,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6174,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6262,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6363,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6457,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6552,
-            "length": 15,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_requestedCount' does not exist on type 'HCCrawler'. Did you mean 'requestedCount'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 6517,
-                "length": 14,
-                "messageText": "'requestedCount' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6715,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6724,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6731,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 6855,
-            "length": 6,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_queue' does not exist on type 'HCCrawler'. Did you mean 'queue'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 4062,
-                "length": 5,
-                "messageText": "'queue' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 7075,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 7084,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 7091,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 7878,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 8401,
-            "length": 8,
-            "messageText": "'_request' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.",
-            "category": 1,
-            "code": 7023
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 8410,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 8419,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 8426,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 9689,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 9698,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 9705,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10112,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10121,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10128,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10847,
-            "length": 10,
-            "messageText": "Parameter 'sitemapUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10859,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10868,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10875,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 10922,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11241,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11471,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11480,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11487,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11582,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11895,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 12106,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 12382,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 12773,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 12898,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13093,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13102,
-            "length": 8,
-            "messageText": "Parameter 'response' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13392,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13497,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13711,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13720,
-            "length": 13,
-            "messageText": "Parameter 'redirectChain' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 13735,
-            "length": 8,
-            "messageText": "Parameter 'response' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14133,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14158,
-            "length": 11,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_preRequest' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14200,
-            "length": 11,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_preRequest' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14323,
-            "length": 6,
-            "messageText": "Parameter 'result' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14347,
-            "length": 10,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_onSuccess' does not exist on type 'HCCrawler'. Did you mean '_success'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 14314,
-                "length": 8,
-                "messageText": "'_success' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14382,
-            "length": 10,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_onSuccess' does not exist on type 'HCCrawler'. Did you mean '_success'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 14314,
-                "length": 8,
-                "messageText": "'_success' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14499,
-            "length": 5,
-            "messageText": "Parameter 'error' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14522,
-            "length": 8,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_onError' does not exist on type 'HCCrawler'. Did you mean '_error'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 14492,
-                "length": 6,
-                "messageText": "'_error' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14555,
-            "length": 8,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_onError' does not exist on type 'HCCrawler'. Did you mean '_error'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 14492,
-                "length": 6,
-                "messageText": "'_error' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14748,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14757,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14764,
-            "length": 11,
-            "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14807,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_browser' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 14982,
-            "length": 7,
-            "messageText": "Parameter 'crawler' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15007,
-            "length": 12,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_customCrawl' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15114,
-            "length": 12,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_customCrawl' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15320,
-            "length": 4,
-            "messageText": "Parameter 'urls' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15326,
-            "length": 7,
-            "messageText": "Parameter 'options' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15335,
-            "length": 5,
-            "messageText": "Parameter 'depth' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15762,
-            "length": 15,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_requestedCount' does not exist on type 'HCCrawler'. Did you mean 'requestedCount'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 6517,
-                "length": 14,
-                "messageText": "'requestedCount' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15797,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15825,
-            "length": 15,
-            "code": 2551,
-            "category": 1,
-            "messageText": "Property '_requestedCount' does not exist on type 'HCCrawler'. Did you mean 'requestedCount'?",
-            "relatedInformation": [
-              {
-                "file": "../lib/hccrawler.ts",
-                "start": 6517,
-                "length": 14,
-                "messageText": "'requestedCount' is declared here.",
-                "category": 3,
-                "code": 2728
-              }
-            ]
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15849,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16016,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16044,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16140,
-            "length": 3,
-            "messageText": "Parameter 'res' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16161,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16189,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16309,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16384,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16442,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16478,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_exporter' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16600,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_options' does not exist on type 'HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 16754,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property '_cache' does not exist on type 'HCCrawler'."
-          }
-        ]
-      ],
+      "../lib/hccrawler.ts",
       "../lib/helper.ts",
       "../lib/priority-queue.js",
       "../lib/puppeteer.d.ts",

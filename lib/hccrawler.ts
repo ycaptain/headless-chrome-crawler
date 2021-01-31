@@ -26,7 +26,7 @@ import {
 import PriorityQueue from './priority-queue';
 import Crawler from './crawler';
 import SessionCache from '../cache/session';
-import type { Browser, Page, Cookie, ScreenshotOptions, Viewport, NavigationOptions } from 'puppeteer';
+import type { Browser, Page, Cookie, ScreenshotOptions, Viewport, NavigationOptions, ConnectOptions, LaunchOptions } from 'puppeteer';
 
 Puppeteer.use(StealthPlugin());
 export { Puppeteer };
@@ -66,12 +66,36 @@ const EMPTY_TXT = '';
 
 const deviceNames = Object.keys(devices);
 
-class HCCrawler extends EventEmitter {
+const defaultOptions = {
+  maxDepth: 1,
+  maxConcurrency: 10,
+  maxRequest: 0,
+  priority: 0,
+  delay: 0,
+  retryCount: 3,
+  retryDelay: 10000,
+  timeout: 30000,
+  jQuery: true,
+  browserCache: true,
+  persistCache: false,
+  skipDuplicates: true,
+  depthPriority: true,
+  obeyRobotsTxt: true,
+  followSitemapXml: false,
+  skipRequestedRedirect: false,
+  cookies: null as null | Cookie[],
+  screenshot: null  as null | ScreenshotOptions,
+  viewport: null as null | Viewport,
+}
+
+type DefaultOptions = typeof defaultOptions;
+
+class HCCrawler<EvalResult = any, CustomCrawlResult = any> extends EventEmitter {
   /**
    * @param {!Object=} options
    * @return {!Promise<!HCCrawler>}
    */
-  static async connect(options) {
+  static async connect<EvalResult = any, CustomCrawlResult = any>(options: ConnectOptions & ConstructorOptions<EvalResult, CustomCrawlResult>) {
     const browser = await Puppeteer.connect(pick(options, CONNECT_OPTIONS));
     const crawler = new HCCrawler(browser, omit(options, CONNECT_OPTIONS));
     await crawler.init();
@@ -82,7 +106,7 @@ class HCCrawler extends EventEmitter {
    * @param {!Object=} options
    * @return {!Promise<!HCCrawler>}
    */
-  static async launch(options) {
+  static async launch<EvalResult = any, CustomCrawlResult = any>(options: LaunchOptions & ConstructorOptions<EvalResult, CustomCrawlResult>) {
     const browser = await Puppeteer.launch(pick(options, LAUNCH_OPTIONS));
     const crawler = new HCCrawler(browser, omit(options, LAUNCH_OPTIONS));
     await crawler.init();
@@ -103,34 +127,25 @@ class HCCrawler extends EventEmitter {
     return Puppeteer.defaultArgs();
   }
 
+  _browser: Browser;
+  _options: DefaultOptions & ConstructorOptions<EvalResult, CustomCrawlResult>;
+  _cache: any;
+  _queue: any;
+  _exporter: any;
+  _preRequest: ConstructorOptions<EvalResult, CustomCrawlResult>['preRequest'] | null;
+  _requestedCount: number;
+  _onSuccess: ConstructorOptions<EvalResult, CustomCrawlResult>['onSuccess'] | null;
+  _onError: ConstructorOptions<EvalResult, CustomCrawlResult>['onError'] | null;
+  _customCrawl: ConstructorOptions<EvalResult, CustomCrawlResult>['customCrawl'] | null;
+
   /**
    * @param {!Puppeteer.Browser} browser
    * @param {!Object} options
    */
-  constructor(browser: Browser, options) {
+  constructor(browser: Browser, options: ConstructorOptions<EvalResult, CustomCrawlResult>) {
     super();
     this._browser = browser;
-    this._options = extend({
-      maxDepth: 1,
-      maxConcurrency: 10,
-      maxRequest: 0,
-      priority: 0,
-      delay: 0,
-      retryCount: 3,
-      retryDelay: 10000,
-      timeout: 30000,
-      jQuery: true,
-      browserCache: true,
-      persistCache: false,
-      skipDuplicates: true,
-      depthPriority: true,
-      obeyRobotsTxt: true,
-      followSitemapXml: false,
-      skipRequestedRedirect: false,
-      cookies: null,
-      screenshot: null,
-      viewport: null,
-    }, options);
+    this._options = extend(defaultOptions, options);
     this._cache = options.cache || new SessionCache();
     this._queue = new PriorityQueue({
       maxConcurrency: this._options.maxConcurrency,
@@ -143,7 +158,7 @@ class HCCrawler extends EventEmitter {
     this._onError = options.onError || null;
     this._customCrawl = options.customCrawl || null;
     this._exportHeader();
-    this._queue.on('pull', (_options, depth, previousUrl) => this._startRequest(_options, depth, previousUrl));
+    this._queue.on('pull', (_options: any, depth: number, previousUrl: string | null) => this._startRequest(_options, depth, previousUrl));
     this._browser.on('disconnected', () => this.emit(HCCrawler.Events.Disconnected));
   }
 
@@ -159,7 +174,7 @@ class HCCrawler extends EventEmitter {
    * @param {?Object|?Array<!string>|?string} options
    * @return {!Promise}
    */
-  async queue(options) {
+  async queue(options: QueueOptions<EvalResult>) {
     await Promise.all(map(isArray(options) ? options : [options], async _options => {
       const queueOptions = isString(_options) ? { url: _options } : _options;
       each(CONSTRUCTOR_OPTIONS, option => {
@@ -228,7 +243,7 @@ class HCCrawler extends EventEmitter {
   /**
    * @param {!number} maxRequest
    */
-  setMaxRequest(maxRequest) {
+  setMaxRequest(maxRequest: number) {
     this._options.maxRequest = maxRequest;
   }
 
@@ -281,7 +296,7 @@ class HCCrawler extends EventEmitter {
    * @param {string} previousUrl
    * @return {!Promise}
    */
-  async _push(options, depth, previousUrl) {
+  async _push(options: any, depth: number, previousUrl: string | null) {
     let { priority } = options;
     if (!priority && options.depthPriority) priority = depth;
     await this._queue.push(options, depth, previousUrl, priority);
@@ -294,7 +309,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _startRequest(options, depth, previousUrl) {
+  async _startRequest(options: any, depth: number, previousUrl: string | null) {
     const skip = await this._skipRequest(options);
     if (skip) {
       this.emit(HCCrawler.Events.RequestSkipped, options);
@@ -319,7 +334,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<!boolean>}
    * @private
    */
-  async _skipRequest(options) {
+  async _skipRequest(options: any) {
     const allowedDomain = this._checkAllowedDomains(options);
     if (!allowedDomain) return true;
     const requested = await this._checkRequested(options);
@@ -337,11 +352,11 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<!Array<!string>>}
    * @private
    */
-  async _request(options, depth, previousUrl, retryCount = 0) {
+  async _request(options: any, depth: number, previousUrl: string | null, retryCount = 0): Promise<any> {
     this.emit(HCCrawler.Events.RequestStarted, options);
     const crawler = await this._newCrawler(options, depth, previousUrl);
     try {
-      const res = await this._crawl(crawler);
+      const res = await this._crawl(crawler) as any;
       await crawler.close();
       this.emit(HCCrawler.Events.RequestFinished, options);
       const requested = await this._checkRequestedRedirect(options, res.response);
@@ -372,7 +387,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<!boolean>}
    * @private
    */
-  async _checkAllowedRobots(options, depth, previousUrl) {
+  async _checkAllowedRobots(options: any, depth: number, previousUrl: string | null) {
     if (!options.obeyRobotsTxt) return true;
     const robot = await this._getRobot(options, depth, previousUrl);
     const userAgent = await this._getUserAgent(options);
@@ -386,7 +401,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _followSitemap(options, depth, previousUrl) {
+  async _followSitemap(options: any, depth: number, previousUrl: string | null) {
     if (!options.followSitemapXml) return;
     const robot = await this._getRobot(options, depth, previousUrl);
     const sitemapUrls = robot.getSitemaps();
@@ -406,7 +421,7 @@ class HCCrawler extends EventEmitter {
    * @param {string} previousUrl
    * @return {!Promise<!string>}
    */
-  async _getSitemapXml(sitemapUrl, options, depth, previousUrl) {
+  async _getSitemapXml(sitemapUrl: string, options: any, depth: number, previousUrl: string | null) {
     let sitemapXml = await this._cache.get(sitemapUrl);
     if (!sitemapXml) {
       try {
@@ -429,7 +444,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _getRobot(options, depth, previousUrl) {
+  async _getRobot(options: any, depth: number, previousUrl: string | null) {
     const robotsUrl = getRobotsUrl(options.url);
     let robotsTxt = await this._cache.get(robotsUrl);
     if (!robotsTxt) {
@@ -451,7 +466,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<!string>}
    * @private
    */
-  async _getUserAgent(options) {
+  async _getUserAgent(options: any) {
     if (options.userAgent) return options.userAgent;
     if (devices[options.device]) return devices[options.device].userAgent;
     return this.userAgent();
@@ -462,7 +477,7 @@ class HCCrawler extends EventEmitter {
    * @return {!boolean}
    * @private
    */
-  _checkAllowedDomains(options) {
+  _checkAllowedDomains(options: any) {
     const { hostname } = parse(options.url);
     if (options.deniedDomains && checkDomainMatch(options.deniedDomains, hostname)) return false;
     if (options.allowedDomains && !checkDomainMatch(options.allowedDomains, hostname)) return false;
@@ -474,7 +489,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<!boolean>}
    * @private
    */
-  async _checkRequested(options) {
+  async _checkRequested(options: any) {
     if (!options.skipDuplicates) return false;
     const key = generateKey(options);
     const value = await this._cache.get(key);
@@ -487,7 +502,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<!boolean>}
    * @private
    */
-  async _checkRequestedRedirect(options, response) {
+  async _checkRequestedRedirect(options: any, response: any) {
     if (!options.skipRequestedRedirect) return false;
     const requested = await this._checkRequested(extend({}, options, { url: response.url }));
     return requested;
@@ -498,7 +513,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _markRequested(options) {
+  async _markRequested(options: any) {
     if (!options.skipDuplicates) return;
     const key = generateKey(options);
     await this._cache.set(key, '1');
@@ -511,7 +526,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _markRequestedRedirects(options, redirectChain, response) {
+  async _markRequestedRedirects(options: any, redirectChain: Array<any>, response: any) {
     if (!options.skipRequestedRedirect) return;
     await Promise.all(map(redirectChain, async request => {
       await this._markRequested(extend({}, options, { url: request.url }));
@@ -524,7 +539,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise<?boolean>}
    * @private
    */
-  async _shouldRequest(options) {
+  async _shouldRequest(options: any) {
     if (!this._preRequest) return true;
     return this._preRequest(options);
   }
@@ -534,7 +549,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _success(result) {
+  async _success(result: any) {
     if (!this._onSuccess) return;
     await this._onSuccess(result);
   }
@@ -544,7 +559,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _error(error) {
+  async _error(error: any) {
     if (!this._onError) return;
     await this._onError(error);
   }
@@ -556,7 +571,7 @@ class HCCrawler extends EventEmitter {
    * @param {string} previousUrl
    * @private
    */
-  async _newCrawler(options, depth, previousUrl) {
+  async _newCrawler(options: any, depth: number, previousUrl: string | null) {
     const page = await this._browser.newPage();
     return new Crawler(page, options, depth, previousUrl);
   }
@@ -565,7 +580,7 @@ class HCCrawler extends EventEmitter {
    * @param {!Crawler} crawler
    * @return {!Promise<!Object>}
    */
-  async _crawl(crawler) {
+  async _crawl(crawler: Crawler) {
     if (!this._customCrawl) return crawler.crawl();
     const crawl = () => crawler.crawl.call(crawler);
     return this._customCrawl(crawler.page(), crawl);
@@ -578,7 +593,7 @@ class HCCrawler extends EventEmitter {
    * @return {!Promise}
    * @private
    */
-  async _followLinks(urls, options, depth) {
+  async _followLinks(urls: string[], options: any, depth: number) {
     if (depth >= options.maxDepth) {
       this.emit(HCCrawler.Events.MaxDepthReached);
       return;
@@ -614,7 +629,7 @@ class HCCrawler extends EventEmitter {
    * @param {!Object} res
    * @private
    */
-  _exportLine(res) {
+  _exportLine(res: any) {
     if (!this._exporter) return;
     this._exporter.writeLine(res);
   }
@@ -731,7 +746,4 @@ type JSONValue = {
   [K in string]: string | number | boolean;
 };
 
-
-
-// module.exports = HCCrawler;
 export default HCCrawler;

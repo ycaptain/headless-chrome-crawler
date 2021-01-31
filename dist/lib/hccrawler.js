@@ -59,6 +59,27 @@ const CONSTRUCTOR_OPTIONS = CONNECT_OPTIONS.concat(LAUNCH_OPTIONS).concat([
 ]);
 const EMPTY_TXT = '';
 const deviceNames = Object.keys(DeviceDescriptors_1.default);
+const defaultOptions = {
+    maxDepth: 1,
+    maxConcurrency: 10,
+    maxRequest: 0,
+    priority: 0,
+    delay: 0,
+    retryCount: 3,
+    retryDelay: 10000,
+    timeout: 30000,
+    jQuery: true,
+    browserCache: true,
+    persistCache: false,
+    skipDuplicates: true,
+    depthPriority: true,
+    obeyRobotsTxt: true,
+    followSitemapXml: false,
+    skipRequestedRedirect: false,
+    cookies: null,
+    screenshot: null,
+    viewport: null,
+};
 class HCCrawler extends events_1.default {
     /**
      * @param {!Puppeteer.Browser} browser
@@ -67,27 +88,7 @@ class HCCrawler extends events_1.default {
     constructor(browser, options) {
         super();
         this._browser = browser;
-        this._options = extend_1.default({
-            maxDepth: 1,
-            maxConcurrency: 10,
-            maxRequest: 0,
-            priority: 0,
-            delay: 0,
-            retryCount: 3,
-            retryDelay: 10000,
-            timeout: 30000,
-            jQuery: true,
-            browserCache: true,
-            persistCache: false,
-            skipDuplicates: true,
-            depthPriority: true,
-            obeyRobotsTxt: true,
-            followSitemapXml: false,
-            skipRequestedRedirect: false,
-            cookies: null,
-            screenshot: null,
-            viewport: null,
-        }, options);
+        this._options = extend_1.default(defaultOptions, options);
         this._cache = options.cache || new session_1.default();
         this._queue = new priority_queue_1.default({
             maxConcurrency: this._options.maxConcurrency,
@@ -644,6 +645,5 @@ HCCrawler.Events = {
     Disconnected: 'disconnected',
 };
 helper_1.tracePublicAPI(HCCrawler);
-// module.exports = HCCrawler;
 exports.default = HCCrawler;
 //# sourceMappingURL=hccrawler.js.map

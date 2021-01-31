@@ -66,19 +66,6 @@ class HCCrawler extends events_1.default {
      */
     constructor(browser, options) {
         super();
-        this.Events = {
-            RequestStarted: 'requeststarted',
-            RequestSkipped: 'requestskipped',
-            RequestDisallowed: 'requestdisallowed',
-            RequestFinished: 'requestfinished',
-            RequestRetried: 'requestretried',
-            RequestFailed: 'requestfailed',
-            RobotsTxtRequestFailed: 'robotstxtrequestfailed',
-            SitemapXmlRequestFailed: 'sitemapxmlrequestfailed',
-            MaxDepthReached: 'maxdepthreached',
-            MaxRequestReached: 'maxrequestreached',
-            Disconnected: 'disconnected',
-        };
         this._browser = browser;
         this._options = extend_1.default({
             maxDepth: 1,
@@ -114,7 +101,7 @@ class HCCrawler extends events_1.default {
         this._customCrawl = options.customCrawl || null;
         this._exportHeader();
         this._queue.on('pull', (_options, depth, previousUrl) => this._startRequest(_options, depth, previousUrl));
-        this._browser.on('disconnected', () => void this.emit(HCCrawler.Events.Disconnected));
+        this._browser.on('disconnected', () => this.emit(HCCrawler.Events.Disconnected));
     }
     /**
      * @param {!Object=} options
@@ -643,6 +630,19 @@ class HCCrawler extends events_1.default {
         await this._cache.close();
     }
 }
+HCCrawler.Events = {
+    RequestStarted: 'requeststarted',
+    RequestSkipped: 'requestskipped',
+    RequestDisallowed: 'requestdisallowed',
+    RequestFinished: 'requestfinished',
+    RequestRetried: 'requestretried',
+    RequestFailed: 'requestfailed',
+    RobotsTxtRequestFailed: 'robotstxtrequestfailed',
+    SitemapXmlRequestFailed: 'sitemapxmlrequestfailed',
+    MaxDepthReached: 'maxdepthreached',
+    MaxRequestReached: 'maxrequestreached',
+    Disconnected: 'disconnected',
+};
 helper_1.tracePublicAPI(HCCrawler);
 // module.exports = HCCrawler;
 exports.default = HCCrawler;

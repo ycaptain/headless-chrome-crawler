@@ -387,8 +387,8 @@
         "affectsGlobalScope": true
       },
       "../lib/hccrawler.ts": {
-        "version": "21df92a7ec0409111923059655888ad0a26c8fbd915f9e66c19a2030311f4e7f",
-        "signature": "acca637730ef6caf2fb46d77a62b878386b3535c1319312696769581403a8762",
+        "version": "1a815e05178f40e466d1e5b7fac7cc54be54c763a18b4bc42d3ed8783b0a1fdb",
+        "signature": "49b787b0ce66f9beab208e2e8ed6fc73891d169a316c8135950e61e9c5a8bee7",
         "affectsGlobalScope": false
       },
       "../lib/puppeteer.d.ts": {
@@ -869,6 +869,7 @@
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/omit.d.ts",
         "../../../node_modules/.pnpm/@types/lodash@4.14.162/node_modules/@types/lodash/pick.d.ts",
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts",
         "../../../node_modules/.pnpm/@types/request-promise@4.1.46/node_modules/@types/request-promise/index.d.ts",
         "../../../node_modules/.pnpm/puppeteer-extra-plugin-stealth@2.6.7_puppeteer-extra@3.1.16/node_modules/puppeteer-extra-plugin-stealth/index.d.ts",
         "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/index.d.ts",
@@ -1775,6 +1776,7 @@
       ],
       "../lib/hccrawler.ts": [
         "../../../node_modules/.pnpm/@types/node@10.3.4/node_modules/@types/node/index.d.ts",
+        "../../../node_modules/.pnpm/@types/puppeteer@5.4.2/node_modules/@types/puppeteer/index.d.ts",
         "../../../node_modules/.pnpm/puppeteer-extra@3.1.16_puppeteer@5.5.0/node_modules/puppeteer-extra/dist/index.d.ts",
         "../lib/crawler.js"
       ],
@@ -2282,7 +2284,7 @@
         [
           {
             "file": "../lib/hccrawler.ts",
-            "start": 1649,
+            "start": 1753,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2290,7 +2292,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 1965,
+            "start": 2069,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2298,15 +2300,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 2490,
-            "length": 7,
-            "messageText": "Parameter 'browser' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 2499,
+            "start": 2612,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2314,7 +2308,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 2532,
+            "start": 2645,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2322,7 +2316,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 2561,
+            "start": 2674,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2330,7 +2324,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3065,
+            "start": 3178,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -2338,7 +2332,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3120,
+            "start": 3233,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2346,7 +2340,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2356,7 +2350,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3176,
+            "start": 3289,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2364,7 +2358,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3219,
+            "start": 3332,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -2372,7 +2366,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3244,
+            "start": 3357,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -2380,7 +2374,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3291,
+            "start": 3404,
             "length": 15,
             "code": 2551,
             "category": 1,
@@ -2388,7 +2382,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 6409,
+                "start": 6517,
                 "length": 14,
                 "messageText": "'requestedCount' is declared here.",
                 "category": 3,
@@ -2398,7 +2392,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3321,
+            "start": 3434,
             "length": 11,
             "code": 2339,
             "category": 1,
@@ -2406,7 +2400,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3372,
+            "start": 3485,
             "length": 10,
             "code": 2551,
             "category": 1,
@@ -2414,7 +2408,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 14206,
+                "start": 14314,
                 "length": 8,
                 "messageText": "'_success' is declared here.",
                 "category": 3,
@@ -2424,7 +2418,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3421,
+            "start": 3534,
             "length": 8,
             "code": 2551,
             "category": 1,
@@ -2432,7 +2426,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 14384,
+                "start": 14492,
                 "length": 6,
                 "messageText": "'_error' is declared here.",
                 "category": 3,
@@ -2442,7 +2436,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3466,
+            "start": 3579,
             "length": 12,
             "code": 2339,
             "category": 1,
@@ -2450,7 +2444,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3545,
+            "start": 3658,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2458,7 +2452,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2468,7 +2462,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3564,
+            "start": 3677,
             "length": 8,
             "messageText": "Parameter '_options' implicitly has an 'any' type.",
             "category": 1,
@@ -2476,7 +2470,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3574,
+            "start": 3687,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -2484,7 +2478,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3581,
+            "start": 3694,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2492,7 +2486,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3657,
+            "start": 3770,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2500,23 +2494,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3685,
-            "length": 51,
-            "messageText": "Function expression, which lacks return-type annotation, implicitly has an 'any' return type.",
-            "category": 1,
-            "code": 7011
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3716,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 3812,
+            "start": 3920,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -2524,7 +2502,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3836,
+            "start": 3944,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2532,7 +2510,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2542,7 +2520,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 3960,
+            "start": 4068,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2550,7 +2528,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 4340,
+            "start": 4448,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2558,7 +2536,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5022,
+            "start": 5130,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2566,7 +2544,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2576,7 +2554,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5051,
+            "start": 5159,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2584,7 +2562,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5238,
+            "start": 5346,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2592,7 +2570,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2602,7 +2580,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5267,
+            "start": 5375,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2610,7 +2588,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5466,
+            "start": 5574,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2618,7 +2596,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5568,
+            "start": 5676,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2626,7 +2604,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5663,
+            "start": 5771,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2634,7 +2612,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5761,
+            "start": 5869,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2642,7 +2620,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2652,7 +2630,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5844,
+            "start": 5952,
             "length": 10,
             "messageText": "Parameter 'maxRequest' implicitly has an 'any' type.",
             "category": 1,
@@ -2660,7 +2638,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5867,
+            "start": 5975,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -2668,7 +2646,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5927,
+            "start": 6035,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2676,7 +2654,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2686,7 +2664,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 5970,
+            "start": 6078,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2694,7 +2672,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2704,7 +2682,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6066,
+            "start": 6174,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -2712,7 +2690,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6154,
+            "start": 6262,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2720,7 +2698,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2730,7 +2708,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6255,
+            "start": 6363,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2738,7 +2716,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2748,7 +2726,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6349,
+            "start": 6457,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2756,7 +2734,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2766,7 +2744,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6444,
+            "start": 6552,
             "length": 15,
             "code": 2551,
             "category": 1,
@@ -2774,7 +2752,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 6409,
+                "start": 6517,
                 "length": 14,
                 "messageText": "'requestedCount' is declared here.",
                 "category": 3,
@@ -2784,7 +2762,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6607,
+            "start": 6715,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2792,7 +2770,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6616,
+            "start": 6724,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -2800,7 +2778,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6623,
+            "start": 6731,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2808,7 +2786,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6747,
+            "start": 6855,
             "length": 6,
             "code": 2551,
             "category": 1,
@@ -2816,7 +2794,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 3954,
+                "start": 4062,
                 "length": 5,
                 "messageText": "'queue' is declared here.",
                 "category": 3,
@@ -2826,7 +2804,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6967,
+            "start": 7075,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2834,7 +2812,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6976,
+            "start": 7084,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -2842,7 +2820,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 6983,
+            "start": 7091,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2850,23 +2828,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 7091,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 7313,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 7770,
+            "start": 7878,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2874,7 +2836,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 8293,
+            "start": 8401,
             "length": 8,
             "messageText": "'_request' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.",
             "category": 1,
@@ -2882,7 +2844,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 8302,
+            "start": 8410,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2890,7 +2852,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 8311,
+            "start": 8419,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -2898,7 +2860,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 8318,
+            "start": 8426,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2906,39 +2868,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 8373,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 8590,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 9129,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 9246,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 9581,
+            "start": 9689,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2946,7 +2876,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 9590,
+            "start": 9698,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -2954,7 +2884,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 9597,
+            "start": 9705,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2962,7 +2892,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10004,
+            "start": 10112,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -2970,7 +2900,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10013,
+            "start": 10121,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -2978,7 +2908,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10020,
+            "start": 10128,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2986,7 +2916,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10739,
+            "start": 10847,
             "length": 10,
             "messageText": "Parameter 'sitemapUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -2994,7 +2924,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10751,
+            "start": 10859,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3002,7 +2932,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10760,
+            "start": 10868,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -3010,7 +2940,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10767,
+            "start": 10875,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -3018,7 +2948,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 10814,
+            "start": 10922,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -3026,15 +2956,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11024,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11133,
+            "start": 11241,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -3042,7 +2964,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11363,
+            "start": 11471,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3050,7 +2972,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11372,
+            "start": 11480,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -3058,7 +2980,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11379,
+            "start": 11487,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -3066,7 +2988,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11474,
+            "start": 11582,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -3074,15 +2996,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11680,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 11787,
+            "start": 11895,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -3090,7 +3004,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 11998,
+            "start": 12106,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3098,7 +3012,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 12274,
+            "start": 12382,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3106,7 +3020,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 12665,
+            "start": 12773,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3114,7 +3028,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 12790,
+            "start": 12898,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -3122,7 +3036,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 12985,
+            "start": 13093,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3130,7 +3044,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 12994,
+            "start": 13102,
             "length": 8,
             "messageText": "Parameter 'response' implicitly has an 'any' type.",
             "category": 1,
@@ -3138,7 +3052,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 13284,
+            "start": 13392,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3146,7 +3060,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 13389,
+            "start": 13497,
             "length": 6,
             "code": 2339,
             "category": 1,
@@ -3154,7 +3068,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 13603,
+            "start": 13711,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3162,7 +3076,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 13612,
+            "start": 13720,
             "length": 13,
             "messageText": "Parameter 'redirectChain' implicitly has an 'any' type.",
             "category": 1,
@@ -3170,7 +3084,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 13627,
+            "start": 13735,
             "length": 8,
             "messageText": "Parameter 'response' implicitly has an 'any' type.",
             "category": 1,
@@ -3178,7 +3092,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14025,
+            "start": 14133,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3186,7 +3100,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14050,
+            "start": 14158,
             "length": 11,
             "code": 2339,
             "category": 1,
@@ -3194,7 +3108,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14092,
+            "start": 14200,
             "length": 11,
             "code": 2339,
             "category": 1,
@@ -3202,7 +3116,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14215,
+            "start": 14323,
             "length": 6,
             "messageText": "Parameter 'result' implicitly has an 'any' type.",
             "category": 1,
@@ -3210,7 +3124,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14239,
+            "start": 14347,
             "length": 10,
             "code": 2551,
             "category": 1,
@@ -3218,7 +3132,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 14206,
+                "start": 14314,
                 "length": 8,
                 "messageText": "'_success' is declared here.",
                 "category": 3,
@@ -3228,7 +3142,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14274,
+            "start": 14382,
             "length": 10,
             "code": 2551,
             "category": 1,
@@ -3236,7 +3150,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 14206,
+                "start": 14314,
                 "length": 8,
                 "messageText": "'_success' is declared here.",
                 "category": 3,
@@ -3246,7 +3160,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14391,
+            "start": 14499,
             "length": 5,
             "messageText": "Parameter 'error' implicitly has an 'any' type.",
             "category": 1,
@@ -3254,7 +3168,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14414,
+            "start": 14522,
             "length": 8,
             "code": 2551,
             "category": 1,
@@ -3262,7 +3176,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 14384,
+                "start": 14492,
                 "length": 6,
                 "messageText": "'_error' is declared here.",
                 "category": 3,
@@ -3272,7 +3186,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14447,
+            "start": 14555,
             "length": 8,
             "code": 2551,
             "category": 1,
@@ -3280,7 +3194,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 14384,
+                "start": 14492,
                 "length": 6,
                 "messageText": "'_error' is declared here.",
                 "category": 3,
@@ -3290,7 +3204,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14640,
+            "start": 14748,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3298,7 +3212,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14649,
+            "start": 14757,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -3306,7 +3220,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14656,
+            "start": 14764,
             "length": 11,
             "messageText": "Parameter 'previousUrl' implicitly has an 'any' type.",
             "category": 1,
@@ -3314,7 +3228,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14699,
+            "start": 14807,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -3322,7 +3236,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14874,
+            "start": 14982,
             "length": 7,
             "messageText": "Parameter 'crawler' implicitly has an 'any' type.",
             "category": 1,
@@ -3330,7 +3244,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 14899,
+            "start": 15007,
             "length": 12,
             "code": 2339,
             "category": 1,
@@ -3338,7 +3252,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15006,
+            "start": 15114,
             "length": 12,
             "code": 2339,
             "category": 1,
@@ -3346,7 +3260,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15212,
+            "start": 15320,
             "length": 4,
             "messageText": "Parameter 'urls' implicitly has an 'any' type.",
             "category": 1,
@@ -3354,7 +3268,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15218,
+            "start": 15326,
             "length": 7,
             "messageText": "Parameter 'options' implicitly has an 'any' type.",
             "category": 1,
@@ -3362,7 +3276,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15227,
+            "start": 15335,
             "length": 5,
             "messageText": "Parameter 'depth' implicitly has an 'any' type.",
             "category": 1,
@@ -3370,15 +3284,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15299,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15654,
+            "start": 15762,
             "length": 15,
             "code": 2551,
             "category": 1,
@@ -3386,7 +3292,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 6409,
+                "start": 6517,
                 "length": 14,
                 "messageText": "'requestedCount' is declared here.",
                 "category": 3,
@@ -3396,7 +3302,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15689,
+            "start": 15797,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -3404,7 +3310,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15717,
+            "start": 15825,
             "length": 15,
             "code": 2551,
             "category": 1,
@@ -3412,7 +3318,7 @@
             "relatedInformation": [
               {
                 "file": "../lib/hccrawler.ts",
-                "start": 6409,
+                "start": 6517,
                 "length": 14,
                 "messageText": "'requestedCount' is declared here.",
                 "category": 3,
@@ -3422,7 +3328,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15741,
+            "start": 15849,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -3430,15 +3336,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15790,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'Events' does not exist on type 'typeof HCCrawler'."
-          },
-          {
-            "file": "../lib/hccrawler.ts",
-            "start": 15908,
+            "start": 16016,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3446,7 +3344,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 15936,
+            "start": 16044,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3454,7 +3352,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16032,
+            "start": 16140,
             "length": 3,
             "messageText": "Parameter 'res' implicitly has an 'any' type.",
             "category": 1,
@@ -3462,7 +3360,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16053,
+            "start": 16161,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3470,7 +3368,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16081,
+            "start": 16189,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3478,7 +3376,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16201,
+            "start": 16309,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3486,7 +3384,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16276,
+            "start": 16384,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3494,7 +3392,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16334,
+            "start": 16442,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3502,7 +3400,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16370,
+            "start": 16478,
             "length": 9,
             "code": 2339,
             "category": 1,
@@ -3510,7 +3408,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16492,
+            "start": 16600,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -3518,7 +3416,7 @@
           },
           {
             "file": "../lib/hccrawler.ts",
-            "start": 16646,
+            "start": 16754,
             "length": 6,
             "code": 2339,
             "category": 1,

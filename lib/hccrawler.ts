@@ -26,6 +26,7 @@ import {
 import PriorityQueue from './priority-queue';
 import Crawler from './crawler';
 import SessionCache from '../cache/session';
+import type { Browser, Page, Cookie, ScreenshotOptions, Viewport, NavigationOptions } from 'puppeteer';
 
 Puppeteer.use(StealthPlugin());
 export { Puppeteer };
@@ -106,7 +107,7 @@ class HCCrawler extends EventEmitter {
    * @param {!Puppeteer.Browser} browser
    * @param {!Object} options
    */
-  constructor(browser, options) {
+  constructor(browser: Browser, options) {
     super();
     this._browser = browser;
     this._options = extend({
@@ -143,7 +144,7 @@ class HCCrawler extends EventEmitter {
     this._customCrawl = options.customCrawl || null;
     this._exportHeader();
     this._queue.on('pull', (_options, depth, previousUrl) => this._startRequest(_options, depth, previousUrl));
-    this._browser.on('disconnected', () => void this.emit(HCCrawler.Events.Disconnected));
+    this._browser.on('disconnected', () => this.emit(HCCrawler.Events.Disconnected));
   }
 
   /**
@@ -648,7 +649,7 @@ class HCCrawler extends EventEmitter {
     await this._cache.close();
   }
 
-  Events = {
+  static Events = {
     RequestStarted: 'requeststarted',
     RequestSkipped: 'requestskipped',
     RequestDisallowed: 'requestdisallowed',
@@ -663,9 +664,74 @@ class HCCrawler extends EventEmitter {
   };
 }
 
-
-
 tracePublicAPI(HCCrawler);
+
+export type ConstructorOptions<EvalResult = any, CustomCrawlResult = any> = {
+  maxConcurrency?: number;
+  maxRequest?: number;
+  exporter?: any;
+  cache?: any;
+  persistCache?: boolean; //default to false
+  preRequest?: (
+    options: ConstructorOptions<EvalResult, CustomCrawlResult>,
+  ) => boolean;
+  customCrawl?: (
+    page: Page,
+    crawl: () => Promise<CrawlResult<EvalResult>>,
+  ) => Promise<CustomCrawlResult>;
+  onSuccess?: (
+    result: CustomCrawlResult extends null ? EvalResult : CustomCrawlResult,
+  ) => Promise<void>;
+  onError?: (error: { options: QueueOptions<EvalResult>, depth: number, previousUrl: string | null }) => Promise<void>;
+}
+
+export type QueueOptions<EvalResult = null> = {
+  url: string;
+  maxDepth?: number; // default to 1
+  priority?: number; // default to 1
+  depthPriority?: boolean; // default to true
+  skipDuplicates?: boolean; // default to true
+  skipRequestedRedirect?: boolean; // default to false
+  obeyRobotsTxt?: boolean; // default to true
+  followSitemapXml?: boolean; // default to false
+  allowedDomains?: Array<string | RegExp>;
+  deniedDomains?: Array<string | RegExp>;
+  delay?: number; // default to 30
+  timeout?: number; // default to 30 * 1000
+  waitUntil?: NavigationOptions['waitUntil'];
+  waitFor?: Page['waitFor']; // @deprecated
+  retryCount?: number; // default to 3
+  retryDelay?: number; // default to 10000
+  jQuery?: boolean; // default to true
+  browserCache?: boolean; // default to true
+  device?: string;
+  username?: string;
+  screenshot?: ScreenshotOptions;
+  viewport?: Viewport;
+  password?: string;
+  userAgent?: string;
+  extraHeaders?: { [K in string]: string };
+  cookies?: Array<Cookie>;
+  evaluatePage?: () => EvalResult;
+};
+
+export type CrawlResult<EvalResult = null> = {
+  redirectChain: Array<{ url: string; headers: JSONValue }>;
+  cookies: Array<Cookie>;
+  response: {
+    ok: boolean;
+    status: string;
+    url: string;
+    headers: JSONValue;
+  };
+
+}
+
+type JSONValue = {
+  [K in string]: string | number | boolean;
+};
+
+
 
 // module.exports = HCCrawler;
 export default HCCrawler;
